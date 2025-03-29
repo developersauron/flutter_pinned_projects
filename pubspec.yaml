@@ -1,7 +1,8 @@
 name: flutter_pinned_projects
-description: "A new Flutter package project."
+description: "A Flutter package to pin projects to the top of the list in the GitHub repository."
 version: 0.0.1
 homepage:
+repository: https://github.com/developersailor/flutter_pinned_projects
 
 environment:
   sdk: ^3.7.2
