@@ -28,6 +28,7 @@ void main() {
             'stargazers_count': 42,
             'language': 'Dart',
             'owner': {'avatar_url': 'https://example.com/avatar.png'},
+            'pinned': true,
           },
         ]);
 
