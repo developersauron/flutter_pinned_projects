@@ -1,39 +1,51 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Flutter Pinned Projects
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Flutter Pinned Projects is a Flutter package designed to help you pin projects to the top of the list in a GitHub repository. This package simplifies the process of managing pinned repositories programmatically.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Pin projects to the top of a GitHub repository list.
+- Easy-to-use API for seamless integration.
+- Built with Flutter and Dart.
 
-## Getting started
+## Installation
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add the following to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  flutter_pinned_projects: ^0.0.1
+```
+
+Then, run:
+
+```bash
+flutter pub get
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Import the package:
 
 ```dart
-const like = 'sample';
+import 'package:flutter_pinned_projects/flutter_pinned_projects.dart';
 ```
 
-## Additional information
+Use the package to pin a project:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+final githubService = GitHubService();
+await githubService.pinProject('owner', 'repository');
+```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue.
+
+## Author
+
+Developed by Mehmet Fiskindal.
