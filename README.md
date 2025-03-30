@@ -31,11 +31,29 @@ Import the package:
 import 'package:flutter_pinned_projects/flutter_pinned_projects.dart';
 ```
 
-Use the package to pin a project:
+Use the `PinnedProjectsWidget` to display pinned projects:
 
 ```dart
-final githubService = GitHubService();
-await githubService.pinProject('owner', 'repository');
+import 'package:flutter/material.dart';
+import 'package:flutter_pinned_projects/flutter_pinned_projects.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: const Text('Pinned Projects')),
+        body: const PinnedProjectsWidget(username:"username"),
+      ),
+    );
+  }
+}
 ```
 
 ## License
